@@ -82,4 +82,13 @@ make
 You will get dynamic libraries and executable samples in `build`.
 
 #### Debug
-Use IDEs such as *CLion* which will read the `CMakeLists.txt` and generate debug configurations.
+Use IDEs which will read the `CMakeLists.txt` and generate debug configurations.
+
+## How to use 
+
+Here’s a guide on how to build and run a sample pipeline with `Videopipeplus`. You can either compile `Videopipeplus` as a library and link it, or directly include the source code and compile the entire application.
+
+Below is a sample code demonstrating how to construct a pipeline and run it. Please make sure to update the file paths in the code accordingly:
+
+
+
