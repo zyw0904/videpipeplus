@@ -148,3 +148,4 @@ int main() {
 2. **Screen Output**: The GUI display showing results.
 3. **Video stream status**：The running status of each frame of the video stream.
 
+![](./docs/4.png)
