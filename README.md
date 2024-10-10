@@ -90,5 +90,61 @@ Here’s a guide on how to build and run a sample pipeline with `Videopipeplus`.
 
 Below is a sample code demonstrating how to construct a pipeline and run it. Please make sure to update the file paths in the code accordingly:
 
+```c++
+#include "../nodes/vp_file_src_node.h"
+#include "../nodes/infers/vp_yunet_face_detector_node.h"
+#include "../nodes/infers/vp_sface_feature_encoder_node.h"
+#include "../nodes/osd/vp_face_osd_node_v2.h"
+#include "../nodes/vp_screen_des_node.h"
+#include "../utils/analysis_board/vp_analysis_board.h"
 
+/*
+* Name: 1-1-N Sample
+* Complete code located at: samples/1-1-N_sample.cpp
+* Functionality: 1 video input, 1 video analysis task (face detection and recognition), 2 outputs (screen display/RTMP stream)
+*/
+
+int main() {
+    VP_SET_LOG_INCLUDE_CODE_LOCATION(false);
+    VP_SET_LOG_INCLUDE_THREAD_ID(false);
+    VP_LOGGER_INIT();
+
+    // 1. Create nodes
+    // Video Source Node
+    auto file_src_0 = std::make_shared<vp_nodes::vp_file_src_node>("file_src_0", 0, "./test_video/10.mp4", 0.6);
+    
+    // 2. Model Inference Nodes
+    // First-level inference: Face detection
+    auto yunet_face_detector_0 = std::make_shared<vp_nodes::vp_yunet_face_detector_node>("yunet_face_detector_0", "./models/face/face_detection_yunet_2022mar.onnx");
+    // Second-level inference: Face recognition
+    auto sface_face_encoder_0 = std::make_shared<vp_nodes::vp_sface_feature_encoder_node>("sface_face_encoder_0", "./models/face/face_recognition_sface_2021dec.onnx");
+    
+    // 3. OSD Node
+    // Draw results on frames
+    auto osd_0 = std::make_shared<vp_nodes::vp_face_osd_node_v2>("osd_0");
+    
+    // Screen Display Node
+    auto screen_des_0 = std::make_shared<vp_nodes::vp_screen_des_node>("screen_des_0", 0);
+
+    // Build the pipeline by linking the nodes
+    yunet_face_detector_0->attach_to({file_src_0});
+    sface_face_encoder_0->attach_to({yunet_face_detector_0});
+    osd_0->attach_to({sface_face_encoder_0});
+
+    // Split the pipeline automatically to display results on screen and stream via RTMP
+    screen_des_0->attach_to({osd_0});
+
+    // Start the pipeline
+    file_src_0->start();
+
+    // Visualize the pipeline
+    vp_utils::vp_analysis_board board({file_src_0});
+    board.display();
+}
+```
+
+**Note**: Running this code will show three displays:
+1. **Pipeline Status**: A live update of the pipeline’s status.
+2. **Screen Output**: The GUI display showing results.
+3. **Video stream status**：The running status of each frame of the video stream.
 
