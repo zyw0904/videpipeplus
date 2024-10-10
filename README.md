@@ -11,6 +11,14 @@
 
 ### high hardware adaptability
 
+Here is a comparison table:
+
+| **Name**      | **Open Source** | **Learning Curve** | **Supported Platforms** | **Performance** |
+|---------------|-----------------|---------------------|--------------------------|-----------------|
+| DeepStream    | No              | High                | NVIDIA only              | High            |
+| mxVision      | No              | High                | Huawei only              | High            |
+| VideoPipe     | Yes             | Low                 | GPU/VPU/TPU              | Medium          |
+
 ### low development barriers
 
 ### external hardware integration
