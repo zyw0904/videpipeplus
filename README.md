@@ -38,3 +38,5 @@ The following is a graphical development interface:
 ### external hardware integration
 
 [https://github.com/zyw0904/videpipeplus/blob/master/docs/b27c4670ddde48328622ad71640f4bdb-%E6%88%AA%E5%8F%96%E8%A7%86%E9%A2%91-20241011013143.mp4](https://github.com/user-attachments/assets/a7338ac8-a598-4588-8f3f-d21ceea5f0d2)
+
+`videopipeplus` also supports real-time hardware control, which can realize the linkage operation between the software layer and the hardware layer. As shown in the above video, the steering gear can be controlled according to the detected target to ensure the integrity of the target.
