@@ -33,7 +33,7 @@ Here is a hardware hardware architecture of Videopipeplus:
 
 The following is a graphical development interface:
 
-
+![](./docs/3.png)
 
 ### external hardware integration
 
