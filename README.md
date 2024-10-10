@@ -19,6 +19,10 @@ Here is a comparison table:
 | mxVision      | No              | High                | Huawei only              | High            |
 | VideoPipe     | Yes             | Low                 | GPU/VPU/TPU              | Medium          |
 
+Here is a hardware hardware architecture of Videopipeplus:
+
+![](./doc/图片2.png)
+
 ### low development barriers
 
 ### external hardware integration
