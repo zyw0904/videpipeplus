@@ -40,3 +40,46 @@ The following is a graphical development interface:
 [https://github.com/zyw0904/videpipeplus/blob/master/docs/b27c4670ddde48328622ad71640f4bdb-%E6%88%AA%E5%8F%96%E8%A7%86%E9%A2%91-20241011013143.mp4](https://github.com/user-attachments/assets/a7338ac8-a598-4588-8f3f-d21ceea5f0d2)
 
 `videopipeplus` also supports real-time hardware control, which can realize the linkage operation between the software layer and the hardware layer. As shown in the above video, the steering gear can be controlled according to the detected target to ensure the integrity of the target.
+
+## Demonstration
+
+What this video contains: Video analysis on different devices using a graphical development interface, including real-time control of external hardware hardware.
+
+## Dependencies
+
+Platforms
+- Ubuntu 18.04 aarch64 NVIDIA jetson serials device，tx2 GPU
+- Raspberry Pi OS aarch64 Raspberry Pi 4， Intel NCS2 VPU
+- Raspberry Pi OS aarch64 Raspberry Pi 4， Coral USB Accelerator TPU
+
+Basics
+- C++ 17
+- OpenCV >= 4.6
+- GStreamer 1.14.5 (Required by OpenCV)
+- GCC >= 7.5
+- Tensorflow lite
+- Openvino
+- Onnxruntime
+
+## Compilation and Debugging
+
+### Build
+
+- Build VideoPipe (via shell)
+    - Go to the videopipeplus folder
+    - run `cd build/`
+    - run `sh build.sh`
+    - it will generate a library called `libvp.so` and copy it to `/usr/local/lib` automatically.
+
+#### Build samples
+
+```shell
+mkdir build # if not exist
+cd build
+cmake ..
+make
+```
+You will get dynamic libraries and executable samples in `build`.
+
+#### Debug
+Use IDEs such as *CLion* which will read the `CMakeLists.txt` and generate debug configurations.
