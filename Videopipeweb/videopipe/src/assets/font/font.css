@@ -1,0 +1,6 @@
+@font-face {
+    font-family: 'Thin';
+    src: url('./AlimamaAgileVF-Thin.woff') format('woff'),
+    url('./AlimamaAgileVF-Thin.woff2') format('woff2');
+    font-display: swap;
+  }

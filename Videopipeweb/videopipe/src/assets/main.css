@@ -1,0 +1,62 @@
+@import './base.css';
+@import 'https://cdn.jsdelivr.net/npm/@vue-flow/core@1.39.0/dist/style.css';
+@import 'https://cdn.jsdelivr.net/npm/@vue-flow/core@1.39.0/dist/theme-default.css';
+@import 'https://cdn.jsdelivr.net/npm/@vue-flow/controls@latest/dist/style.css';
+@import 'https://cdn.jsdelivr.net/npm/@vue-flow/minimap@latest/dist/style.css';
+@import 'https://cdn.jsdelivr.net/npm/@vue-flow/node-resizer@latest/dist/style.css';
+
+body {
+  background-color: rgb(241, 241, 241);
+  height: 100%;
+  display: flex;
+  place-items: center;
+}
+#app {
+  max-width: 1872px;
+  margin: 0 auto;
+  padding: 0rem;
+  font-weight: normal;
+  margin-top: -50px;
+}
+
+.vue-flow__edges {
+  filter:invert(100%)
+}
+.grid-rows{
+  display: grid;
+  grid-template-rows: 200px 120px 1fr; /* 定义三行栅格 */
+  gap: 16px;
+}
+.grid-columns{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 16px;
+  padding: 0 2rem;
+}
+
+a,
+.green{
+  text-decoration: none;
+  color: rgb(63, 188, 238);
+  transition: 0.4s;
+  padding: 3px;
+}
+
+/* @media (hover: hover) {
+  a:hover {
+    background-color: hsla(160, 100%, 37%, 0.2);
+  }
+} */
+
+/* @media (min-width: 1024px) {
+  body {
+    display: flex;
+    place-items: center;
+  }
+
+  #app {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 0 2rem;
+  }
+} */
