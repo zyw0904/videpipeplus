@@ -21,7 +21,6 @@ Here is a comparison table:
 
 Here is a hardware hardware architecture of Videopipeplus:
 
-![](./docs/图片2.png)
 <p style="" align="center">
   <img src="./docs/图片2.png" width="640" height="300">
 </p>
