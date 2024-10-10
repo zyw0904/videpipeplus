@@ -23,6 +23,8 @@ Here is a hardware hardware architecture of Videopipeplus:
 
 ![](./docs/图片2.png)
 
+`Videopipeplus` can achieve real-time video analysis tasks on a variety of edge heterogeneous devices. A variety of inference engines are integrated within the framework. The inference engines can be selected according to the changes of the scene and model to achieve video analysis on different devices
+
 ### low development barriers
 
 ### external hardware integration
