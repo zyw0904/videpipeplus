@@ -149,3 +149,6 @@ int main() {
 3. **Video stream status**：The running status of each frame of the video stream.
 
 ![](./docs/4.png)
+
+## Thanks
+<a href='https://github.com/sherlockchou86/VideoPipe' target="_blank"><img src="https://api.hellogithub.com/v1/widgets/recommend.svg?rid=4284d29e778642a4a51a471ab1eae6f0&claim_uid=hBZTk0E2RAzJKyq" alt="Featured｜HelloGitHub" style="width: 250px; height: 54px;" width="250" height="54" /></a>
