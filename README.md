@@ -152,4 +152,5 @@ int main() {
 
 ## Thanks
 <a href='https://github.com/sherlockchou86/VideoPipe' target="_blank"><img src="./docs/logo.png" style="width: 54px; height: 54px;" width="250" height="54" /></a>
+
 VideoPipe
