@@ -21,7 +21,7 @@ Here is a comparison table:
 
 Here is a hardware hardware architecture of Videopipeplus:
 
-![](./doc/图片2.png)
+![](./docs/图片2.png)
 
 ### low development barriers
 
