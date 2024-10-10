@@ -7,3 +7,10 @@
 
 ## Advantages and Features
 
+`Videopipeplus` is similar to NVIDIA's DeepStream and Huawei's mxVision frameworks, however, it has three advantages over other frameworks: high hardware adaptability, low development barriers, and external hardware integration.
+
+### high hardware adaptability
+
+### low development barriers
+
+### external hardware integration
