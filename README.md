@@ -1,5 +1,5 @@
 ## Introduction
-`videopipeplus` is a intelligent video analytics framework for edge heterogeneous devices, improved based on the open source project <a href='https://github.com/sherlockchou86/VideoPipe'>VideoPipe</a>，written in C++. It has three key advantages: high hardware adaptability, low development barriers, and external hardware integration. The framework utilizes a modular design to support various edge hardware acceleration devices, allowing flexible adaptation to resource-constrained edge environments. Its model conversion module facilitates cross-device model portability, simplifying deployment. Additionally, the graphical development environment enables users to quickly build video analysis pipelines through intuitive operations, significantly lowering the technical barrier. The framework also supports real-time interaction with external devices, enhancing automation and responsiveness. `Videopipeplus` can be used to build different types of video analysis applications, suitable for scenarios such as video structuring, image search, face recognition, and behavior analysis in many fields.
+`FlexiVision` is a intelligent video analytics framework for edge heterogeneous devices, improved based on the open source project <a href='https://github.com/sherlockchou86/VideoPipe'>VideoPipe</a>，written in C++. It has three key advantages: high hardware adaptability, low development barriers, and external hardware integration. The framework utilizes a modular design to support various edge hardware acceleration devices, allowing flexible adaptation to resource-constrained edge environments. Its model conversion module facilitates cross-device model portability, simplifying deployment. Additionally, the graphical development environment enables users to quickly build video analysis pipelines through intuitive operations, significantly lowering the technical barrier. The framework also supports real-time interaction with external devices, enhancing automation and responsiveness. `FlexiVision` can be used to build different types of video analysis applications, suitable for scenarios such as video structuring, image search, face recognition, and behavior analysis in many fields.
 
 <p style="" align="center">
   <img src="./docs/1.png" width="480" height="376">
@@ -7,7 +7,7 @@
 
 ## Advantages and Features
 
-`Videopipeplus` is similar to NVIDIA's DeepStream and Huawei's mxVision frameworks, however, it has three advantages over other frameworks: high hardware adaptability, low development barriers, and external hardware integration.
+`FlexiVision` is similar to NVIDIA's DeepStream and Huawei's mxVision frameworks, however, it has three advantages over other frameworks: high hardware adaptability, low development barriers, and external hardware integration.
 
 ### high hardware adaptability
 
@@ -17,19 +17,19 @@ Here is a comparison table:
 |---------------|-----------------|---------------------|--------------------------|-----------------|
 | DeepStream    | No              | High                | NVIDIA only              | High            |
 | mxVision      | No              | High                | Huawei only              | High            |
-| VideoPipe     | Yes             | Low                 | GPU/VPU/TPU              | Medium          |
+| FlexiVision   | Yes             | Low                 | GPU/VPU/TPU              | Medium          |
 
-Here is a hardware hardware architecture of Videopipeplus:
+Here is a hardware hardware architecture of FlexiVision:
 
 <p style="" align="center">
   <img src="./docs/图片2.png" width="640" height="300">
 </p>
 
-`Videopipeplus` can achieve real-time video analysis tasks on a variety of edge heterogeneous devices. A variety of inference engines are integrated within the framework. The inference engines can be selected according to the changes of the scene and model to achieve video analysis on different devices.
+`FlexiVision` can achieve real-time video analysis tasks on a variety of edge heterogeneous devices. A variety of inference engines are integrated within the framework. The inference engines can be selected according to the changes of the scene and model to achieve video analysis on different devices.
 
 ### low development barriers
 
-`videopipeplus` provides a convenient graphical development environment, which can realize drag-and-drop video analysis pipeline to achieve real-time video analysis, greatly reducing the difficulty of video analysis task development and improving efficiency.
+`FlexiVision` provides a convenient graphical development environment, which can realize drag-and-drop video analysis pipeline to achieve real-time video analysis, greatly reducing the difficulty of video analysis task development and improving efficiency.
 
 The following is a graphical development interface:
 
@@ -39,7 +39,7 @@ The following is a graphical development interface:
 
 [https://github.com/zyw0904/videpipeplus/blob/master/docs/b27c4670ddde48328622ad71640f4bdb-%E6%88%AA%E5%8F%96%E8%A7%86%E9%A2%91-20241011013143.mp4](https://github.com/user-attachments/assets/a7338ac8-a598-4588-8f3f-d21ceea5f0d2)
 
-`videopipeplus` also supports real-time hardware control, which can realize the linkage operation between the software layer and the hardware layer. As shown in the above video, the steering gear can be controlled according to the detected target to ensure the integrity of the target.
+`FlexiVision` also supports real-time hardware control, which can realize the linkage operation between the software layer and the hardware layer. As shown in the above video, the steering gear can be controlled according to the detected target to ensure the integrity of the target.
 
 ## Demonstration
 
@@ -65,8 +65,8 @@ Basics
 
 ### Build
 
-- Build VideoPipe (via shell)
-    - Go to the videopipeplus folder
+- Build FlexiVision (via shell)
+    - Go to the FlexiVision folder
     - run `cd build/`
     - run `sh build.sh`
     - it will generate a library called `libvp.so` and copy it to `/usr/local/lib` automatically.
@@ -86,7 +86,7 @@ Use IDEs which will read the `CMakeLists.txt` and generate debug configurations.
 
 ## How to use 
 
-Here’s a guide on how to build and run a sample pipeline with `Videopipeplus`. You can either compile `Videopipeplus` as a library and link it, or directly include the source code and compile the entire application.
+Here’s a guide on how to build and run a sample pipeline with `FlexiVision`. You can either compile `FlexiVision` as a library and link it, or directly include the source code and compile the entire application.
 
 Below is a sample code demonstrating how to construct a pipeline and run it. Please make sure to update the file paths in the code accordingly:
 
