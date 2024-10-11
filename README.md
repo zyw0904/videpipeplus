@@ -1,2 +1,2 @@
-# videpipeplus
+# FlexiVision
 graduate program
