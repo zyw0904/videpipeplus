@@ -43,6 +43,8 @@ The following is a graphical development interface:
 
 ## Demonstration
 
+[![IMAGE ALT TEXT HERE](https://img.youtube.com/vi/eYeLJd0RRY4/0.jpg)](https://www.youtube.com/watch?v=eYeLJd0RRY4)
+
 What this video contains: Video analysis on different devices using a graphical development interface, including real-time control of external hardware hardware.
 
 ## Dependencies
